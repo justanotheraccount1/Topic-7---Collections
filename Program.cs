@@ -52,12 +52,17 @@ namespace Topic_7___Collections
                     a[i] = a[i] / 2;
                 }
                 Console.Write($"{a[i]}  ");
-                min = a[i];
                 if (a[i] < min)
                 {
-
+                    min = a[i];
+                }
+                if (a[i] > max)
+                {
+                    max = a[i];
                 }
             }
+            Console.WriteLine();
+            Console.WriteLine($"Min:{min}   Max:{max}");
 
         }
     }
